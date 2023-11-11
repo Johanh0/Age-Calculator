@@ -7,15 +7,52 @@
     <title>Age Calculator</title>
 </head>
 <body>
-    <header>
 
-    </header>
+    <main class="w-full h-screen flex justify-center items-center bg-gray-100">
+        <section class="flex flex-col gap-5 w-1/2 h-fit bg-white rounded-xl rounded-br-[100px] p-5 shadow-sm">
+            <div id="formDiv" class="flex flex-col gap-3 w-full">
+                <form id="form" action="" class="flex gap-14">
+                    <div id="dayDiv" class="flex flex-col gap-2 w-[120px]">
+                        <label for="day" class="text-gray-400 font-bold text-[12px]">DAY</label>
+                        <input id="day" type="text" class="w-full p-3 border rounded-lg" placeholder="DD">
+                    </div>
+                    <div id="monthDiv" class="flex flex-col gap-2 w-[120px]">
+                        <label for="month" class="text-gray-400 font-bold text-[12px]">MONTH</label>
+                        <input id="month" type="text" class="w-full p-3 border rounded-lg" placeholder="MM">
+                    </div>
+                    <div id="yearDiv" class="flex flex-col gap-2 w-[120px]">
+                        <label for="year" class="text-gray-400 font-bold text-[12px]">YEAR</label>
+                        <input id="year" type="text" class="w-full p-3 border rounded-lg" placeholder="YYYY">
+                    </div>
+                </form>
 
-    <main>
-        
+                <div id="errorDiv" class="w-full">
+
+                </div>
+            </div>
+
+            <div>
+                <div class="w-full h-[2px] bg-gray-100 "></div>
+            </div>
+
+            <div>
+                <div class="flex gap-10 text-7xl">
+                    <span id="result-years" class="text-blue-500">- -</span>
+                    <p class="font-bold">years</p>
+                </div>
+                <div class="flex gap-10 text-7xl">
+                    <span id="result-months" class="text-blue-500">- -</span>
+                    <p class="font-bold">months</p>
+                </div>
+                <div class="flex gap-10 text-7xl">
+                    <span id="result-days" class="text-blue-500">- -</span>
+                    <p class="font-bold">days</p>
+                </div>
+            </div>
+        </section>
     </main>
 
 
-    <script src="./js/index.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>
